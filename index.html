@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assests/fitoterapia.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>APF</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1 id="title-header">APF - Aplicativo de Prescrição Fitoterápica</h1>
+    </header>
+    <main>
+        <section class="partes" id="form-receita">
+            <h2>Anamnese:</h2>
+
+            <label>Paciente:</label>
+            <input placeholder="Digite o nome" class="inputs" id="input-a" oninput="inputA(this)" type="text">
+            <label>Informações:</label>
+            <input placeholder="Informe o necessário" class="inputs" id="input-b" oninput="inputB(this)" type="text">
+            <label>cccccccc:</label>
+            <input placeholder="Digite o nome" class="inputs" id="input-c" oninput="inputC(this)" type="text">
+            <label>dddddddd:</label>
+            <input placeholder="Digite o nome" class="inputs" id="input-d" oninput="inputD(this)" type="text">
+            <label>eeeeeeee:</label>
+            <input placeholder="Digite o nome" class="inputs" id="input-e" oninput="inputE(this)" type="text">
+            <label>Obs:</label>
+            <input placeholder="Observações" type="text" class="" id="input-f">
+        </section>
+        <section class="partes" id="result-receita">
+            <div id="header-receita">
+                <h1>Mário Sergio Vianna</h1>
+                <p>Fitoterapia</p>
+            </div>
+            <div id="conteudo-receita">
+                <!-- conteudo -->
+                <p id="p-teste"></p>
+                <p id="p-teste2"></p>
+                <p id="p-teste3"></p>
+                <p id="p-teste4"></p>
+                <p id="p-teste5"></p>
+
+            </div>
+            <div id="Infos-receita">
+                <p class="p-info1"></p>
+                <p class="p-info">TEL: (35)9-95261913</p>
+                <p class="p-info">SITE: msvfitoterapia.com.br</p>
+                <p class="p-info" class="p-info2">EMAIL: mario.fito@gmail.com</p>
+            </div>
+        </section>
+    </main>
+    <div id="div-botao">
+        <button id="botao" onclick="gerarPdf()"> GERAR </button>
+    </div>
+
+</body>
+
+</html>
