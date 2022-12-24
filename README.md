@@ -21,6 +21,10 @@ WebApp feito para automatizar a geração de receita medica.
 
 - Aplicar boas praticas
 
+- Aplicar UI Design
+
+- Refatorar para Bootstrap
+
 
 ## Stack utilizada
 
